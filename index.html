@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>SETUP – TRIA SUPREMA PIPELINE</title>
+<title>HYP — Hypercore Index</title>
 
 <style>
 body { background:#000; color:#0f0; font-family:monospace; padding:40px; }
@@ -15,55 +15,97 @@ h1 { color:#6cf; letter-spacing:4px; margin-bottom:30px; }
     border-radius:8px;
 }
 a { color:#0f0; text-decoration:none; font-weight:bold; }
-.panel {
-    padding:20px;
-    border:2px solid #333;
-    border-radius:10px;
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+.item {
     background:#111;
-    margin-top:20px;
+    border:1px solid #333;
+    padding:20px;
+    border-radius:8px;
+    text-align:center;
 }
 </style>
 </head>
 
 <body>
 
-<h1>SETUP – TRIA SUPREMA PIPELINE</h1>
+<h1>HYP — Hypercore Pipeline</h1>
 
 <div class="block">
-    <p>Dieses Setup initialisiert die TRIA‑SUPREMA‑Pipeline.</p>
-    <p>Es verbindet TriAxiom, RESPO und AXI zu einem vollständigen System.</p>
+    <pre>
+MY.NAME = HYP
+MY.MODE = ULTRA‑REAL
+MY.RANGE = 720°
+MY.FORM = FULL‑HEIGHT × FULL‑WIDTH
+MY.ACHSEN = X | Y | Z | U | V | W
+MY.EVENT = HYP/E
+MY.ROLE = HYPERCORE
+MY.STATE = ACTIVE
+    </pre>
 </div>
 
 <div class="block">
-    <p><a href="ID.html">→ Pipeline‑Identität öffnen</a></p>
+    <h2>MODULE</h2>
+    <div class="grid">
+        <div class="item">ULTRA3_ENGINE</div>
+        <div class="item">ROOM.MATRIX</div>
+        <div class="item">HTML.MATRIX</div>
+        <div class="item">AXI.KERNEL</div>
+        <div class="item">FUSION.OPERATOR</div>
+        <div class="item">ZERO.CORE</div>
+        <div class="item">CHAIN.ULTRA</div>
+        <div class="item">VECTOR.ULTRA</div>
+    </div>
 </div>
 
 <div class="block">
-    <p><a href="README.md">→ Dokumentation anzeigen</a></p>
+    <h2>CSV‑KERNEL</h2>
+    <div class="grid">
+        <div class="item">ACHSE.3</div>
+        <div class="item">DREIECK.6</div>
+        <div class="item">QUELLE.7</div>
+        <div class="item">ARG.5</div>
+        <div class="item">FUNKTION.6</div>
+        <div class="item">PRÄZISION.3</div>
+        <div class="item">RUNTIME.3</div>
+        <div class="item">STUFE.5</div>
+        <div class="item">FELDER.3</div>
+        <div class="item">SCORE.10</div>
+    </div>
 </div>
 
-<div id="hh-panel" class="panel">
-    <h2>HH – Host‑Hub Panel</h2>
-    <div id="hh-device"></div>
-    <div id="hh-route"></div>
+<div class="block">
+    <h2>EVENT‑SYSTEM</h2>
+    <pre>
+HYP/E = Hyper‑Event
+HYP/HIT = Sieg‑Impuls
+PREFETCH = 99%
+STATE = READY
+    </pre>
 </div>
 
-<div id="pipeline-dashboard" class="panel">
-    <h2>TRIA SUPREMA – Pipeline Dashboard</h2>
-    <div id="pipe-tria"></div>
-    <div id="pipe-respo"></div>
-    <div id="pipe-axi"></div>
-    <div id="pipe-tem"></div>
-    <div id="pipe-run8"></div>
-    <div id="pipe-sym"></div>
-    <div id="pipe-connect"></div>
+<div class="block">
+    <h2>PIPE‑INTEGRATION</h2>
+    <div class="grid">
+        <div class="item">PIPEBUILD.LINK</div>
+        <div class="item">PIPELINE9.LINK</div>
+        <div class="item">RESPO.LINK</div>
+        <div class="item">AXI.LINK</div>
+        <div class="item">6D.LINK</div>
+    </div>
 </div>
 
-<script>
-(async function () {
+<div class="block">
+    <h2>STATUS</h2>
+    <pre>
+ONLINE
+REAL‑LIVE
+ACTIVE
+    </pre>
+</div>
 
-    /* DEVICE ROUTING */
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-
-    const isPX =
-        /iPhone|iPad|iPod/i.test(ua) ||
+</body>
+</html>
